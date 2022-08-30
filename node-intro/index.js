@@ -11,8 +11,9 @@
 
 // these don't need to be installed, but they still need to be imported
 // import crypto from 'crypto'
-// const randomString = crypto.randomBytes(64).toString('Hex')
-// console.log(randomString)
+const crypto = require('crypto')
+const randomString = crypto.randomBytes(64).toString('Hex')
+console.log(randomString)
 
 // here we import the add function
 const addNumbers = require('./add')
